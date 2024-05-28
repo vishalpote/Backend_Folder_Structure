@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import { connection } from './database/database.js';
+import router from './routes/user.routes.js';
 const app=express();
 dotenv.config();
 
@@ -11,6 +12,8 @@ const port = process.env.PORT || 8090;
 app.use(express.json());
 app.use(cors());
 
+//all routes here
+app.use('/api/v1',router)
 
 //here i add the mongodb connection 
 connection();
