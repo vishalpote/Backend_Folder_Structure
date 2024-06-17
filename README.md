@@ -8,7 +8,7 @@
 
 #### git clone https://github.com/vishalpote/Backend_Folder_Structure
 
-## Then select typescript of Javascript 
+## Then select typescript or Javascript 
 
 ### cd typescript or cd Javascript
 
